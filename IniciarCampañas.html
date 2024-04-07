@@ -28,7 +28,7 @@
 
             <!-- logo -->
 
-            <div class="max-lg:order-1">
+            <div class="max-lg:order-1 p-1">
                 <a class="w-16 max-lg:m-4" href="index.html"><img src="img/logonav.jpeg" alt=""></a>
             </div>
 
@@ -71,12 +71,12 @@
                     <ul tabindex="0"
                         class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
                         <li>
-                            <a class="justify-between">
+                            <a class="justify-between" href="PerfilAjuste.html">
                                 Profile
                                 <span class="badge">New</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
+                        <li><a href="PerfilAjuste.html">Settings</a></li>
                         <li id="logOut"><a>Logout</a></li>
                     </ul>
                 </div>
@@ -89,16 +89,100 @@
 
 
 
+    <!-- form de inicio de campaña -->
 
-    <h1 class="text-center text-4xl capitalize my-11">en construcción</h1>
-    <div class="w-full h-full flex justify-center">
+    <div class="">
 
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OBWz8AG8tuU?si=nOlSTJLRq3IQ5hzs?start=0&autoplay=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="w-fit max-lg:w-screen mx-auto">
+            <form class="flex flex-col items-center gap-8 py-16 px-3 max-lg:px-1 bg-[#CFD8D7] rounded-lg " action="" method="post">
+
+                <!-- titulo -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Titulo de la campaña</label>
+                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" type="text">
+                </div>
+
+                <!-- descripcion -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Descripcion</label>
+                    <textarea class="max-lg:w-[95%] rounded-lg bg-white  " name="" id="" cols="60" rows="10"></textarea>
+
+                </div>
+
+                <!-- money -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Objetivo
+                        Financiamiento</label>
+                    <input class="w-[40vw] max-lg:w-[60vw] rounded-lg bg-white" type="number">
+                </div>
+
+                <!-- tiempo de campaña -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Duracion de la campaña</label>
+                    <input class="rounded-lg px-3 bg-white" type="date" name="" id="">
+                </div>
+
+                <!-- categorias -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Categorias</label>
+                    <div>
+                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
+                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
+                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">
+                      <input class="rounded-lg bg-white" type="checkbox" name="" id="">                      
+                    </div>
+
+                </div>
+
+                <!-- imagen -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Imagen principal</label>
+                    <input class="rounded-lg bg-white px-3 py-3 max-lg:px-0 max-lg:w-screen" type="file" name="" id="">
+                </div>
+
+                <!-- video -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Video *opcional</label>
+                    <input class="rounded-lg bg-white px-3 py-3 max-lg:px-0 max-lg:w-screen" type="file" name="" id="">
+                </div>
+
+
+                <!-- recompensa -->
+
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <label class="text-[#206A5D] capitalize text-xl font-medium" for="">Recompensas</label>
+                    <textarea class="rounded-lg max-lg:w-[95%] bg-white " name="" id="" cols="60" rows="10"></textarea>
+
+
+                </div>
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+
     </div>
+
+
+
 
 
 
